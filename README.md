@@ -12,7 +12,7 @@
 3. Install project dependencies
 
 ```sh
-$ git clone git@github.com:[username]/tdd-todoList-legacy.git && cd ]/tdd-todoList-legacy
+$ git clone git@github.com:[username]/tdd-todoList-legacy.git && cd tdd-todoList-legacy
 $ npm ci # to install dependencies
 ```
 

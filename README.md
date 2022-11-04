@@ -38,3 +38,33 @@ You should be able to run this in your JS console (using your node REPL, or brow
 - A user can search todo items by day and see a list of todo items by the day they were created.
 - If there are no todos for that day, show an empty list
 ```
+
+### Extensions
+If you have time to do more (pick whichever interests you the most):
+```
+E1. Setup scripts to run tests using an npm command for:
+- Running tests once
+- Running tests in watch mode
+```
+
+```
+E2. To Do item can be marked incomplete as well as complete.
+- A user can simply toggle the `status` property between `complete` and `incomplete`.
+- A ToDo item should still default to being `incomplete` when created.
+- returns the item that has been updated.
+```
+
+```
+E3. To Do item `text` can be edited.
+- A user can update the text for a given item.
+- returns the item that has been updated.
+```
+
+```
+E4. Create a new class for a ToDoItem.
+- It should have the `name`, `text`, and `status` fields.
+- A user should be able to create it, delete it, and set it as complete.
+- If implemented previously, a user should be able to edit the text, and toggle the complete status.
+- Create a domain model for this new class.
+- Update the ToDoList class as necessary.
+```

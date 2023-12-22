@@ -46,6 +46,12 @@ class TodoList {
     }
     return this.items.splice(itemIndex, 1)[0]
   }
+
+  getItemsByDate(date) {
+    return this.items.filter((item) => {
+      return item.date.toDateString() === date.toDateString()
+    })
+  }
 }
 
 module.exports = TodoList

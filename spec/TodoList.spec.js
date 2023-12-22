@@ -7,7 +7,7 @@ describe('TodoList', () => {
     todoList = new TodoList()
   })
 
-  const expectedDate = new Date(15, 12, 2023)
+  const expectedDate = new Date(1921, 11, 15)
 
   it('creates a todo item', () => {
     // set up
@@ -75,7 +75,7 @@ describe('TodoList', () => {
 
   it('sets item to be complete if found', () => {
     // set up
-    const item1 = todoList.create('turn the heating on!')
+    const item1 = todoList.create('turn the heating on!', expectedDate)
     const expected = {
       id: 1,
       text: 'turn the heating on!',
@@ -127,7 +127,7 @@ describe('TodoList', () => {
 
   it('finds item by id', () => {
     // set up
-    const item1 = todoList.create('turn the heating on!')
+    const item1 = todoList.create('turn the heating on!', expectedDate)
     const expected = {
       id: 1,
       text: 'turn the heating on!',
@@ -151,7 +151,7 @@ describe('TodoList', () => {
 
   it('deletes item by id', () => {
     // set up
-    const item1 = todoList.create('turn the heating on!')
+    const item1 = todoList.create('turn the heating on!', expectedDate)
     const expected = {
       id: 1,
       text: 'turn the heating on!',
